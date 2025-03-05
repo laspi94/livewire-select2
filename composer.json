@@ -1,0 +1,31 @@
+{
+  "name": "laspi94/livewire-select2",
+  "version": "1.0.0",
+  "description": "Package for manipulate select2 input field dinamically with livewire.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Livewire\\Select2\\": "src/",
+      "Livewire\\Select2\\Traits\\": "src/traits/",
+      "Livewire\\Select2\\Helpers\\": "src/helpers/"
+    }
+  },
+  "authors": [
+    {
+      "name": "laspi94",
+      "email": "alanjoselaspina@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.2"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Livewire\\Select2\\LivewireSelect2ServiceProvider"
+      ]
+    }
+  }
+}
