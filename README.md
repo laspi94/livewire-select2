@@ -199,6 +199,16 @@ If you need to load a select2 that depends on another field, you can do it in th
 
 Now, with this same alias and just by manipulating the query you can easily reuse the query you want to perform, obtaining the paginated, preselected results without overloading the DOM.
 
+### HTML EXAMPLE
+
+```html
+  <div wire:ignore>
+    <label for="someField">Ubicación cliente</label>
+      <select class="select2" id="someField" name="someField">
+      </select>
+  </div>
+```
+
 ## Using by
 
 Este proyecto es utilizado por las siguientes empresas:
