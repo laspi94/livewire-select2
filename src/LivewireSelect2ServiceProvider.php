@@ -42,8 +42,11 @@ class LivewireSelect2ServiceProvider extends ServiceProvider
                         if (property_exists($model, 'select2filter') && !empty($model->select2filter)) {
                             foreach ($model->select2filter as $key => $column) {
                                 $columnName = str_contains($column, '.') ? last(explode('.', $column)) : $column;
+
+                                $comparator = env('DB_CONNECTION', '') === 'pgsql' ? 'ILIKE' : 'LIKE';
+
                                 if (Schema::hasColumn($table, $columnName)) {
-                                    $exq->orWhere($column, 'like', "%" . $search . "%");
+                                    $exq->orWhere($column, $comparator, "%" . $search . "%");
                                 }
                             }
                         }
