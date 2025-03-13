@@ -209,6 +209,22 @@ Now, with this same alias and just by manipulating the query you can easily reus
   </div>
 ```
 
+### Validation
+
+You can call the validator without any complications, within the livewire component
+
+```php
+  $this->validate();
+```
+
+- If any rule exists, the error template indicated in our livewireSelect2.php "error_template" will be printed below the field.
+
+The validation template will be generated within our wire:ignore, so to remove it, we can call the following method within our component.
+
+```php
+  $this->resetErrorBagSelect2();
+```
+
 ## Using by
 
 Este proyecto es utilizado por las siguientes empresas:
