@@ -98,7 +98,7 @@ return [
           'uri' => '/list-select2',
           'controller' => \App\Http\Controllers\ExampleController::class,
           'method' => 'listSelect2',
-          'name' => 'list.select2'
+          'name' => 'list.select2',
           'placeholder' => 'Select one',
           'showIdOption' => false,
           'defaultValue' => null
