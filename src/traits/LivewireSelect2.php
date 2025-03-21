@@ -79,7 +79,7 @@ trait LivewireSelect2
 
     public function resetErrorBagSelect2()
     {
-        foreach ($this->select2Field as  $field) {
+        foreach ($this->select2Field as $field => $config) {
             $data = [
                 'field' => $field
             ];

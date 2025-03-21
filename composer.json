@@ -1,6 +1,6 @@
 {
   "name": "laspi94/livewire-select2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Package for manipulate select2 input field dinamically with livewire.",
   "type": "library",
   "license": "MIT",
